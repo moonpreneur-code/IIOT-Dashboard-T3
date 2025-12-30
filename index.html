@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pico W Robot Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚗 Pico W Robot Control</h1>
+
+<div class="adc-box">
+  Potentiometer Value: <span id="adc">---</span>
+</div>
+
+<div class="controls">
+  <button onclick="sendCmd('forward')">⬆ Forward</button>
+
+  <div>
+    <button onclick="sendCmd('left')">⬅ Left</button>
+    <button onclick="sendCmd('stop')">⏹ Stop</button>
+    <button onclick="sendCmd('right')">➡ Right</button>
+  </div>
+
+  <button onclick="sendCmd('backward')">⬇ Backward</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
