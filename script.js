@@ -1,4 +1,4 @@
-const PICO_IP = "http://192.168.1.9:80"; // CHANGE THIS
+const PICO_IP = "https://interdependently-indecomposable-isaiah.ngrok-free.dev"; // CHANGE THIS
 
 function sendCmd(cmd) {
   fetch(`${PICO_IP}/${cmd}`)
@@ -16,5 +16,6 @@ function getADC() {
 
 // Fetch ADC value every 300ms
 setInterval(getADC, 300);
+
 
 
