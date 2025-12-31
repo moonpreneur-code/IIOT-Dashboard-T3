@@ -1,4 +1,4 @@
-const PICO_IP = "http://192.168.10.68"; // CHANGE THIS
+const PICO_IP = "http://192.168.1.9"; // CHANGE THIS
 
 function sendCmd(cmd) {
   fetch(`${PICO_IP}/${cmd}`)
@@ -16,3 +16,4 @@ function getADC() {
 
 // Fetch ADC value every 300ms
 setInterval(getADC, 300);
+
